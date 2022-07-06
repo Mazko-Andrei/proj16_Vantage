@@ -114,6 +114,9 @@
     .removePopup {
         display: none;
     }
+    .thirdPage { 
+        padding-top: 50px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -129,6 +132,13 @@
     }
     .firstPage-bottom_socials {
     justify-content: center;
+    }
+    .content-right_item {
+        max-width: 200px;
+    }
+    .fifthPage-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -150,6 +160,23 @@
             height: 50%;
         }
     }
+    .thirdPage { 
+        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .thirdPage-content {
+        flex-direction: column;
+    }
+    .thirdPage-content_right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .content-right_item {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 600px){
@@ -166,6 +193,10 @@
         width: 100%;
         margin-left: 0;
         gap: 0;
+    }
+    .fifthPage-cards {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -204,5 +235,20 @@
         & a {
             height: 50px;
         }
+    }
+    .title-content_left {
+        font-size: 40px;
+    }
+    .thirdPage { 
+        padding: 0;
+    }
+    .thirdPage { 
+        padding-bottom: 50px;
+    }
+    .fifthPage-title {
+        font-size: 40px;;
+    }
+    .fifthPage-btn {
+        width: 100%;
     }
 }

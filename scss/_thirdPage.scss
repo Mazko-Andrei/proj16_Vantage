@@ -1,0 +1,82 @@
+.thirdPage {
+    padding: 100px 68px 100px;
+    background-color: #EBEBEB;
+}
+.thirdPage-body {
+    display: flex;
+    flex-direction: column;
+}
+.thirdPage-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+}
+.thirdPage-content_left {
+    max-width: 820px;
+}
+.title-content_left {
+    font-size: 53px;
+    margin-bottom: 30px;
+}
+.subtitle span:not(:last-child) {
+    display: block;
+    margin-bottom: 15px;
+}
+.thirdPage-content_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-right_item {
+    cursor: pointer;
+    position: relative;
+    width: 323px;
+    transition: all .5s;
+}
+.content-right_item::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    right: 0;
+    bottom: -5px;
+    background: linear-gradient(270deg, transparent, #99823D);
+    transition: all .5s;
+}
+.content-right_item:hover::before{
+    width: 100%;
+}
+.title-content_right {
+    font-size: 26px;
+}
+.thirdPage-numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.thirdPage-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.number {
+    display: flex;
+    font-size: 59px;
+    font-weight: 700;
+}
+.numberSwiper {
+    overflow: hidden;
+}
+.swiper {
+    margin-left: 0;
+    margin-right: 0;
+}
+.swiper-margin_bottom {
+    margin-bottom: 30px;
+}
+.swiper-pagination-bullet-active {
+    background: #99823D;
+}
