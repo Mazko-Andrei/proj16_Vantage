@@ -28,6 +28,7 @@ body {
 }
 .wrapper {
     width: 100%;
+    overflow: hidden;
 }
 .container {
     max-width: 1337px;
@@ -39,4 +40,6 @@ body {
 @import "thirdPage";
 @import "fourthPage";
 @import "fifthPage";
+@import "sixthPage";
+@import "footer"; 
 @import "mobile"; 

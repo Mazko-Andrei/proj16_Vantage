@@ -34,6 +34,7 @@
     line-height: 309%;
     letter-spacing: 2.7625px;
     text-transform: uppercase;
+    transition: all .5s;
     & a {
         color: #FFFFFF;
         transition: all .5s;
@@ -41,6 +42,9 @@
     & a:hover {
         color: #99823D;
     }
+}
+.nav-item:active {
+    transform: scale(0.95);
 }
 .bg-img {
     & img {
@@ -201,6 +205,9 @@
 .btn:hover {
     box-shadow: 0 0 20px #99823D;
     opacity: 0.8;
+}
+.btn:active {
+    transform: scale(0.95);
 }
 .btn:hover .btn-line--top{
     left: 100%;

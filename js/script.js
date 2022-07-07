@@ -2,10 +2,18 @@ const navButton = document.querySelector("#nav-icon1");
 const mobileNav = document.querySelector(".mobile-menu");
 const body = document.body;
 
+
+const navButton2 = document.querySelector("#nav-icon2");
+const mobileNav2 = document.querySelector(".sixthPage-header_mob");
 // Клик по кнопке
 navButton.addEventListener("click", function (event) {
     event.stopPropagation();
     toggleMobileNav();
+})
+navButton2.addEventListener("click", function (event) {
+    event.stopPropagation();
+    navButton2.classList.toggle("open");
+    mobileNav2.classList.toggle("active");
 })
 // // Клик по окну за пределами навигации
 // window.addEventListener("click", function(){
@@ -157,5 +165,30 @@ var swiper = new Swiper(".imgSwiper", {
 
         }
     }
-  });
+});
+
+var swiper = new Swiper(".partnersSwiper", {
+    slidesPerView: 1,
+    // centerInsufficientSlides: true,
+    // centeredSlides: true,
+    // spaceBetween: 30,
+    // navigation: {
+    //         nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev",
+    //     },
+    breakpoints: {
+        425: {
+            slidesPerView: 2,
+        },
+        600: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1024: {
+            slidesPerView: 5,
+        }
+    }
+});
 
